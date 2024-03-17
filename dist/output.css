@@ -611,15 +611,6 @@ video {
   outline-style: solid;
 }
 
-body {
-  color: white;
-  /* background: url("../src/assets/kul.png");*/
-}
-
-#content {
-  background-color: red;
-  color: wheat;
-  font-size: 50px;
-  font-family: "Madimi One", sans-serif;
-  text-align: center;
+* {
+  color: black
 }
