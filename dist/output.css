@@ -726,11 +726,5 @@ header>nav:active {
 
 /* Content*/
 
-#content {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  align-items: center;
-  padding-top: 10px;
-}
+
 

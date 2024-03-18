@@ -1,4 +1,4 @@
-const data = [1, 2, 3]
+import {menu as data} from "./data";
 
 function menu(content) {
     content.innerHTML = ""
@@ -12,4 +12,4 @@ function menu(content) {
 
 }
 
-export default menu
+export { menu }
