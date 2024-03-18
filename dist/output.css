@@ -726,5 +726,13 @@ header>nav:active {
 
 /* Content*/
 
+@keyframes vanish {
+  from {
+    opacity: 0;
+  }
 
+  to {
+    opacity: 1;
+  }
+}
 
