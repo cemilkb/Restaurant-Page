@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-header{
+header {
     font-family: "Madimi One", sans-serif;
     box-sizing: border-box;
 }
@@ -16,13 +16,17 @@ header>nav {
     transition: 0.5s all;
 }
 
-header>nav:hover{
+header>nav:hover {
     scale: 1.1;
     box-shadow: 0 0 20px 2px white;
-    cursor: pointer ;
+    cursor: pointer;
 }
 
-header>nav:active{
+header>nav:active {
     scale: .9;
     background-color: white;
+}
+
+.clicked {
+    background-color: red;
 }
