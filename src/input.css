@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+.bg-img{
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+}
+
 header {
     font-family: "Madimi One", sans-serif;
     box-sizing: border-box;
@@ -9,6 +15,7 @@ header {
     align-items: center;
     justify-content: center;
     gap: 20px;
+    position: relative;
 }
 
 header>nav {
@@ -48,3 +55,7 @@ header>nav:active {
     }
 }
 
+#content {
+    position: relative;
+    color: wheat;
+}

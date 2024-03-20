@@ -1,13 +1,13 @@
 // HOME DATA
 
-const home = ["home", "KES LA", 3]
+const home = ["home", "ELEMENT", 3]
 
 //MENU DATA
 
-const menu = ["MENU", "KES LA", 3]
+const menu = ["MENU", "ELEMENT", 3]
 
 // CONTACT DATA
 
-const contact = ["CONTACT", "KES LA", 3]
+const contact = ["CONTACT", "ELEMENT", 3]
 
 export { home, menu, contact }
