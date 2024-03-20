@@ -5,21 +5,15 @@ import '../dist/output.css'
 import { home } from './home'
 import { menu } from './menu'
 import { contact } from './contact'
-// import Bu from './assets/kul.png' img çekmek için
-
-/**
- const divImg = document.querySelector(".bg-img")
-const bgImg = new Image()
-bgImg.src = bg
-divImg.appendChild(bgImg)
- */
 
 // Get element
+
 const divImg = document.querySelector(".bg-img")
 const content = document.getElementById("content")
 const navs = document.querySelectorAll("nav")
 
 // Modifie index with home section
+
 home(content)
 
 // Modifie DOM witch wich btn click
@@ -31,10 +25,13 @@ navs.forEach((e) => {
         })
         if (e.id == "menu-btn") {
             menu(content)
+            divImg.style.opacity = 0
         } else if (e.id == "home-btn") {
             home(content)
+            divImg.style.opacity = 1
         } else {
             contact(content)
+            divImg.style.opacity = 0
         }
         e.classList.add("clicked")
     })

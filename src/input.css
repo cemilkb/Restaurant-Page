@@ -3,9 +3,11 @@
 @tailwind utilities;
 
 .bg-img {
+    opacity: 1;
     position: absolute;
     height: 100vh;
     width: 100vw;
+    transition: all 1s;
 }
 
 header {
