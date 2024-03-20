@@ -5,7 +5,6 @@ import '../dist/output.css'
 import { home } from './home'
 import { menu } from './menu'
 import { contact } from './contact'
-import bg from './assets/bg.jpg'
 // import Bu from './assets/kul.png' img çekmek için
 
 /**
@@ -16,7 +15,7 @@ divImg.appendChild(bgImg)
  */
 
 // Get element
-
+const divImg = document.querySelector(".bg-img")
 const content = document.getElementById("content")
 const navs = document.querySelectorAll("nav")
 

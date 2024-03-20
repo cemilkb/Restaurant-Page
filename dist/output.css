@@ -704,7 +704,7 @@ video {
   transition-duration: 150ms;
 }
 
-.bg-img{
+.bg-img {
   position: absolute;
   height: 100vh;
   width: 100vw;
