@@ -8,10 +8,12 @@ import { contact } from './contact'
 import bg from './assets/bg.jpg'
 // import Bu from './assets/kul.png' img çekmek için
 
-const divImg = document.querySelector(".bg-img")
+/**
+ const divImg = document.querySelector(".bg-img")
 const bgImg = new Image()
 bgImg.src = bg
 divImg.appendChild(bgImg)
+ */
 
 // Get element
 
