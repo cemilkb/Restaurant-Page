@@ -11,11 +11,12 @@ import deneme from '../dist/assets/bg.jpg'
 
 const divImg = document.querySelector(".bg-img")
 const content = document.getElementById("content")
+const header = document.getElementById("header")
 const navs = document.querySelectorAll("nav")
 
 // Modifie index with home section
 
-home(content)
+//home(content)
 
 // Modifie DOM witch wich btn click
 
@@ -35,6 +36,33 @@ navs.forEach((e) => {
             divImg.style.opacity = 0
         }
         e.classList.add("clicked")
+    })
+
+    e.addEventListener("mouseover", () => {
+
+        if (e.id == "menu-btn") {
+            navs.forEach(e => {
+                e.style.color = "gold"
+             })
+        } else if (e.id == "home-btn") {
+            navs.forEach(e => {
+                e.style.color = "blue"
+             })
+        } else {
+            navs.forEach(e => {
+                e.style.color = "red"
+                header.style.backgroundColor = "#ff00003e"
+             })
+        }
+
+       
+    })
+
+    e.addEventListener("mouseout", () => {
+        navs.forEach(e => {
+            e.style.color = "white"
+            header.style.backgroundColor = ""
+        })
     })
 })
 
