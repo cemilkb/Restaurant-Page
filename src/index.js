@@ -5,6 +5,7 @@ import '../dist/output.css'
 import { home } from './home'
 import { menu } from './menu'
 import { contact } from './contact'
+import bg from './assets/bg.jpg'
 // import Bu from './assets/kul.png' img çekmek için
 
 // Get element
