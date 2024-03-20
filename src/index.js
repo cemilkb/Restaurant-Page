@@ -11,8 +11,9 @@ import deneme from '../dist/assets/bg.jpg'
 
 const divImg = document.querySelector(".bg-img")
 const content = document.getElementById("content")
-const header = document.getElementById("header")
 const navs = document.querySelectorAll("nav")
+const header = document.getElementById("header")
+
 
 // Modifie index with home section
 
@@ -41,27 +42,33 @@ navs.forEach((e) => {
     e.addEventListener("mouseover", () => {
 
         if (e.id == "menu-btn") {
+            header.style.borderColor = "#ffd9003d"
+            header.style.backgroundColor = "#ffd9003d"
             navs.forEach(e => {
                 e.style.color = "gold"
-             })
+            })
         } else if (e.id == "home-btn") {
+            header.style.borderColor = "#0000ff4d"
+            header.style.backgroundColor = "#0000ff37"
             navs.forEach(e => {
                 e.style.color = "blue"
-             })
+            })
         } else {
             navs.forEach(e => {
+                header.style.borderColor = "red"
+                header.style.backgroundColor = "#ff000033"
                 e.style.color = "red"
-                header.style.backgroundColor = "#ff00003e"
-             })
+            })
         }
 
-       
+
     })
 
     e.addEventListener("mouseout", () => {
+        header.style.borderColor = ""
+        header.style.backgroundColor = ""
         navs.forEach(e => {
             e.style.color = "white"
-            header.style.backgroundColor = ""
         })
     })
 })
