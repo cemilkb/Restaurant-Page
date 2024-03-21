@@ -11,10 +11,24 @@ import deneme from '../dist/assets/bg.jpg'
 
 const divImg = document.querySelector(".bg-img")
 const content = document.getElementById("content")
+const downUp = document.getElementById("down-up")
 const navs = document.querySelectorAll("nav")
 const header = document.getElementById("header")
 
+let show = false
 
+downUp.addEventListener("click", () => {
+
+    if (show == true) {
+        downUp.innerHTML = "  ▽"
+        header.style.height = "0px"
+        show = false
+    } else {
+        downUp.innerHTML = "  △"
+        header.style.height = "50px"
+        show = true
+    }
+})
 // Modifie index with home section
 
 //home(content)
@@ -42,13 +56,13 @@ navs.forEach((e) => {
     e.addEventListener("mouseover", () => {
 
         if (e.id == "menu-btn") {
-            header.style.borderColor = "#ffd9003d"
+            header.style.borderColor = "gold"
             header.style.backgroundColor = "#ffd9003d"
             navs.forEach(e => {
                 e.style.color = "gold"
             })
         } else if (e.id == "home-btn") {
-            header.style.borderColor = "#0000ff4d"
+            header.style.borderColor = "blue"
             header.style.backgroundColor = "#0000ff37"
             navs.forEach(e => {
                 e.style.color = "blue"

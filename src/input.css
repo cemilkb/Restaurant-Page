@@ -2,18 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
-body{
-    background: url(../dist/assets/dene.jpg);
-    background-size: cover;
+::-webkit-scrollbar{
+    width: 10px;
+    background-color: black;
 }
 
-.bg-img {
-    opacity: 1;
-    position: absolute;
-    height: 100vh;
-    width: 100vw;
-    transition: all 1s ease-in-out;
-}
+::-webkit-scrollbar-thumb {
+    background-color: rgba(169, 169, 169, 0.233);
+    outline: 1px solid slategrey;
+    border-radius: 50px;
+  }
+
+/* Header and menu section */
 
 header {
     font-family: "Madimi One", sans-serif;
@@ -22,18 +22,31 @@ header {
     align-items: center;
     justify-content: center;
     gap: 20px;
-    position: relative;
-    padding: 10px;
-    border-width: 3px 0px 3px 0px;
-    border-color: rgba(255, 255, 255, 0.3);
-    background-color: rgba(255, 255, 255, 0.2);
+    background: url(../dist/assets/dene.jpg);
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    height: 0px;
+    position: sticky;
+    top: 0px;
     transition: all 1s;
+}
+
+#down-up {
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    position: fixed;
+    top: 10px;
+    left: 20px;
+    width: max-content;
 }
 
 header>nav {
     text-align: center;
     color: white;
     transition: 1s all;
+    padding: 5px;
 }
 
 header>nav:hover {
@@ -44,8 +57,6 @@ header>nav:hover {
 header>nav:active {
     scale: .9;
 }
-
-.clicked {}
 
 /* Content*/
 
@@ -60,7 +71,41 @@ header>nav:active {
 }
 
 #content {
-    position: relative;
-    color: wheat;
-    background-color: rgba(0, 0, 0, 0.3);
+    background: url(../dist/assets/renkli.jpg);
+    background-size: cover;
+    color: white;
+    box-shadow: inset 0px 0px 10px 3px black;
+    transition: all 2s;
+    min-height: 100vh;
+    box-sizing: border-box;
+    padding-top: 30px;
+}
+
+.exp {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.exp>div{
+    border: 1px solid gold;
+    border-radius: 10px;
+    width: 400px;
+    background: url(../dist/assets/dene.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.exp>div>img{
+    width: 150px;
+    height: 100px;
+    filter: drop-shadow(0px 0px 2px white);
+}
+
+.exp>div>p{
+    width: 80%;
+    text-align: center;
 }
