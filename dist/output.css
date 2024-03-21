@@ -769,6 +769,11 @@ video {
   transition-duration: 150ms;
 }
 
+body{
+  background: url(../dist/assets/dene.jpg);
+  background-size: cover;
+}
+
 .bg-img {
   opacity: 1;
   position: absolute;
