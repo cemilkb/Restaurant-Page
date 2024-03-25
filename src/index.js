@@ -42,13 +42,10 @@ navs.forEach((e) => {
         })
         if (e.id == "menu-btn") {
             menu(content)
-            divImg.style.opacity = 0
         } else if (e.id == "home-btn") {
             home(content)
-            divImg.style.opacity = 1
         } else {
             contact(content)
-            divImg.style.opacity = 0
         }
         e.classList.add("clicked")
     })
@@ -56,22 +53,16 @@ navs.forEach((e) => {
     e.addEventListener("mouseover", () => {
 
         if (e.id == "menu-btn") {
-            header.style.borderColor = "gold"
-            header.style.backgroundColor = "#ffd9003d"
             navs.forEach(e => {
-                e.style.color = "gold"
+                e.style.color = "rgb(56 189 248)"
             })
         } else if (e.id == "home-btn") {
-            header.style.borderColor = "blue"
-            header.style.backgroundColor = "#0000ff37"
             navs.forEach(e => {
-                e.style.color = "blue"
+                e.style.color = "rgb(192 132 252)"
             })
         } else {
             navs.forEach(e => {
-                header.style.borderColor = "red"
-                header.style.backgroundColor = "#ff000033"
-                e.style.color = "red"
+                e.style.color = "rgb(248 113 113)"
             })
         }
 

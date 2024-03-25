@@ -608,6 +608,10 @@ video {
   margin-top: 5rem;
 }
 
+.mt-3 {
+  margin-top: 0.75rem;
+}
+
 .mt-5 {
   margin-top: 1.25rem;
 }
@@ -778,6 +782,11 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.text-purple-400 {
+  --tw-text-opacity: 1;
+  color: rgb(192 132 252 / var(--tw-text-opacity));
+}
+
 .underline {
   text-decoration-line: underline;
 }
@@ -803,7 +812,17 @@ video {
   transition-duration: 150ms;
 }
 
-::-webkit-scrollbar{
+.transition-all {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.duration-1000 {
+  transition-duration: 1000ms;
+}
+
+::-webkit-scrollbar {
   width: 10px;
   background-color: black;
 }
@@ -814,10 +833,13 @@ video {
   border-radius: 50px;
 }
 
+body {
+  font-family: "Dancing Script", cursive;
+}
+
 /* Header and menu section */
 
 header {
-  font-family: "Madimi One", sans-serif;
   box-sizing: border-box;
   display: flex;
   align-items: center;
@@ -889,7 +911,7 @@ header>nav:active {
   justify-content: space-around;
 }
 
-.exp>div{
+.exp>div {
   border: 1px solid gold;
   border-radius: 10px;
   width: 400px;
@@ -899,15 +921,16 @@ header>nav:active {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 5px;
 }
 
-.exp>div>img{
+.exp>div>img {
   width: 150px;
   height: 100px;
   filter: drop-shadow(0px 0px 2px white);
 }
 
-.exp>div>p{
+.exp>div>p {
   width: 80%;
   text-align: center;
 }

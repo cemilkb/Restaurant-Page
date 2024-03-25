@@ -1,6 +1,15 @@
 // HOME DATA
 
-const home = ["home", "ELEMENT", 3]
+const home = [{
+    id: "Brand Name",
+    Content: "From Seed"
+},
+{
+    id: "First Title",
+    Content: "FromSeed: Where Nature Blossoms on Your Plate"
+}
+
+]
 
 //MENU DATA
 
