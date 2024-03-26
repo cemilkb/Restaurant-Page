@@ -101,6 +101,8 @@ function home(content) {
                 const img = document.createElement("img")
                 const p = document.createElement("p")
                 //add atribute
+                innerDiv.classList.add("w-10/12")
+                innerDiv.classList.add("md:w-[30%]")
                 h2.innerHTML = e.id
                 h2.classList.add("text-2xl")
                 h2.classList.add("transition-all")
@@ -117,10 +119,13 @@ function home(content) {
                 div.appendChild(innerDiv)
             })
             div.style.animation = "vanish 2s"
+            div.classList.add("block")
+            div.classList.add("md:flex")
+            div.classList.add("justify-around")
             content.appendChild(div)
         }
     });
 
 }
 
-export { home }
+export { home, borderChange, colorChange }

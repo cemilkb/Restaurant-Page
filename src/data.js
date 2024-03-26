@@ -79,7 +79,66 @@ deserunt laudantium.`},
 
 //MENU DATA
 
-const menu = ["MENU", "ELEMENT", 3]
+const menu = [{
+    id: "Title",
+    Content: "Menu ..."
+},
+{
+    id: "Cards",
+    Content: [
+        {
+            id: "Tavuk pilav",
+            img: "assets/dene.jpg",
+            bg: "assets/deneme.jpg",
+            Content: ` Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+            Quidem sapiente enim iure nobis alias consectetur fugiat neque dolorum
+             nesciunt totam cum repellat magnam ratione delectus suscipit mollitia,
+              culpa eveniet vitae? `
+        },
+        {
+            id: "MANMAGO",
+            img: "assets/dene.jpg",
+            bg: "assets/deneme.jpg",
+            Content: ` Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+            Quidem sapiente enim iure nobis alias consectetur fugiat neque dolorum
+             nesciunt totam cum repellat magnam ratione delectus suscipit mollitia,
+              culpa eveniet vitae? `
+        }, {
+            id: "ZAMBAZU",
+            img: "assets/dene.jpg",
+            bg: "assets/deneme.jpg",
+            Content: ` Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+            Quidem sapiente enim iure nobis alias consectetur fugiat neque dolorum
+             nesciunt totam cum repellat magnam ratione delectus suscipit mollitia,
+              culpa eveniet vitae? `
+        }, {
+            id: "ZAMBAZU",
+            img: "assets/dene.jpg",
+            bg: "assets/deneme.jpg",
+            Content: ` Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+            Quidem sapiente enim iure nobis alias consectetur fugiat neque dolorum
+             nesciunt totam cum repellat magnam ratione delectus suscipit mollitia,
+              culpa eveniet vitae? `
+        }, {
+            id: "ZAMBAZU",
+            img: "assets/dene.jpg",
+            bg: "assets/deneme.jpg",
+            Content: ` Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+            Quidem sapiente enim iure nobis alias consectetur fugiat neque dolorum
+             nesciunt totam cum repellat magnam ratione delectus suscipit mollitia,
+              culpa eveniet vitae? `
+        }, {
+            id: "ZAMBAZU",
+            img: "assets/dene.jpg",
+            bg: "assets/deneme.jpg",
+            Content: ` Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+            Quidem sapiente enim iure nobis alias consectetur fugiat neque dolorum
+             nesciunt totam cum repellat magnam ratione delectus suscipit mollitia,
+              culpa eveniet vitae? `
+        }
+    ]
+}
+]
 
 // CONTACT DATA
 
