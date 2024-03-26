@@ -119,22 +119,6 @@ const menu = [{
             Quidem sapiente enim iure nobis alias consectetur fugiat neque dolorum
              nesciunt totam cum repellat magnam ratione delectus suscipit mollitia,
               culpa eveniet vitae? `
-        }, {
-            id: "ZAMBAZU",
-            img: "assets/dene.jpg",
-            bg: "assets/deneme.jpg",
-            Content: ` Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-            Quidem sapiente enim iure nobis alias consectetur fugiat neque dolorum
-             nesciunt totam cum repellat magnam ratione delectus suscipit mollitia,
-              culpa eveniet vitae? `
-        }, {
-            id: "ZAMBAZU",
-            img: "assets/dene.jpg",
-            bg: "assets/deneme.jpg",
-            Content: ` Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-            Quidem sapiente enim iure nobis alias consectetur fugiat neque dolorum
-             nesciunt totam cum repellat magnam ratione delectus suscipit mollitia,
-              culpa eveniet vitae? `
         }
     ]
 }
@@ -142,6 +126,53 @@ const menu = [{
 
 // CONTACT DATA
 
-const contact = ["CONTACT", "ELEMENT", 3]
+const contact = [{
+    id: "Title",
+    Content: "Contact Us..."
+},
+{
+    id: "Welcome",
+    Content: `Welcome to FromSeed, where culinary experiences flourish! We're thrilled to hear from you. Whether you have 
+    inquiries, feedback, or simply want to say hello, we're here and eager to connect.
+
+Feel free to reach out to us via any of the following channels:
+
+Customer Service: Have a question about our menu, services, or anything else? Our dedicated customer service team is ready
+ to assist you. Drop us a line at customer.service@fromseed.com or give us a call at +1 (XXX) XXX-XXXX during business hours.
+
+Feedback: Your feedback is invaluable to us as we strive to enhance your dining experience. Share your thoughts, suggestions, 
+or comments by emailing us at feedback@fromseed.com. We're all ears!
+
+Collaborations & Partnerships: Interested in collaborating with FromSeed or forming a partnership? Let's explore the possibilities 
+together. Reach out to our partnership team at partnerships@fromseed.com.
+
+Press & Media Inquiries: For media inquiries, interviews, or press-related matters, please contact our media relations team at 
+media@fromseed.com.
+
+Visit Us: If you're in the neighborhood, drop by our location at [Address, City, Country, ZIP Code]. We'd love to see you in person!
+
+At FromSeed, we value open communication and are committed to providing you with exceptional service. Your satisfaction is our
+priority, and we look forward to connecting with you soon.
+
+Bon Appétit!
+
+The FromSeed Team`
+},
+{
+    id: "Adress",
+    Content: [{
+        id: "Insta",
+        Content: `<i class="fa fa-instagram" aria-hidden="true"></i> FromSeed`,
+        Src: "https://www.instagram.com/"
+    }, {
+        id: "Phone",
+        Content: ` <i class="fa fa-phone" aria-hidden="true"></i> +90 999 999 99 99`,
+        Src: "https://play.google.com/store/apps/details?id=com.google.android.dialer&hl=en_US"
+    }, {
+        id: "Insta",
+        Content: `<i class="fa fa-envelope-o" aria-hidden="true"></i> fromseed@hotmail.com`,
+        Src: "https://www.outlook.com/"
+    }]
+}]
 
 export { home, menu, contact }

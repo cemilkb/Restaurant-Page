@@ -51,6 +51,7 @@ function menu(content) {
                 card.classList.add("flex-col")
                 card.classList.add("gap-2")
                 card.classList.add("pt-3")
+                card.classList.add("m-3")
                 card.classList.add("w-11/12")
                 card.classList.add("md:w-3/12")
                 card.classList.add("h-[300px]")
@@ -70,7 +71,6 @@ function menu(content) {
             cards.classList.add("flex-wrap")
             cards.classList.add("items-center")
             cards.classList.add("justify-center")
-            cards.classList.add("gap-10")
             cards.style.animation ="vanish 2s"
 
             content.appendChild(cards)
