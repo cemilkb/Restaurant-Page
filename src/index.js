@@ -15,6 +15,8 @@ const downUp = document.getElementById("down-up")
 const navs = document.querySelectorAll("nav")
 const header = document.getElementById("header")
 
+// Reactive navbar
+
 let show = false
 
 downUp.addEventListener("click", () => {
@@ -29,9 +31,10 @@ downUp.addEventListener("click", () => {
         show = true
     }
 })
+
 // Modifie index with home section
 
-//home(content)
+home(content)
 
 // Modifie DOM witch wich btn click
 

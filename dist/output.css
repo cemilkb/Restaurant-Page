@@ -576,6 +576,16 @@ video {
   margin: auto;
 }
 
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.my-2 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
 .ml-auto {
   margin-left: auto;
 }
@@ -700,6 +710,24 @@ video {
   border-width: 1px;
 }
 
+.border-y {
+  border-top-width: 1px;
+  border-bottom-width: 1px;
+}
+
+.border-y-2 {
+  border-top-width: 2px;
+  border-bottom-width: 2px;
+}
+
+.border-b {
+  border-bottom-width: 1px;
+}
+
+.border-e {
+  border-inline-end-width: 1px;
+}
+
 .bg-emerald-500 {
   --tw-bg-opacity: 1;
   background-color: rgb(16 185 129 / var(--tw-bg-opacity));
@@ -758,6 +786,11 @@ video {
   line-height: 1;
 }
 
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
@@ -772,6 +805,11 @@ video {
   color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
+.text-purple-400 {
+  --tw-text-opacity: 1;
+  color: rgb(192 132 252 / var(--tw-text-opacity));
+}
+
 .text-red-500 {
   --tw-text-opacity: 1;
   color: rgb(239 68 68 / var(--tw-text-opacity));
@@ -780,11 +818,6 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.text-purple-400 {
-  --tw-text-opacity: 1;
-  color: rgb(192 132 252 / var(--tw-text-opacity));
 }
 
 .underline {
@@ -835,6 +868,7 @@ video {
 
 body {
   font-family: "Dancing Script", cursive;
+  overflow-x: hidden;
 }
 
 /* Header and menu section */
@@ -901,6 +935,7 @@ header>nav:active {
   box-shadow: inset 0px 0px 10px 3px black;
   transition: all 2s;
   min-height: 100vh;
+  width: 100vw;
   box-sizing: border-box;
   padding-top: 30px;
 }
@@ -912,9 +947,11 @@ header>nav:active {
 }
 
 .exp>div {
-  border: 1px solid gold;
+  border: 1px solid;
+  border-color: gold;
   border-radius: 10px;
   width: 400px;
+  height: 230px;
   background: url(../dist/assets/dene.jpg);
   background-size: cover;
   background-position: center;
@@ -922,6 +959,7 @@ header>nav:active {
   flex-direction: column;
   align-items: center;
   gap: 5px;
+  transition: all 1s;
 }
 
 .exp>div>img {
@@ -931,6 +969,13 @@ header>nav:active {
 }
 
 .exp>div>p {
-  width: 80%;
+  width: 90%;
   text-align: center;
+  overflow-y: scroll;
+  padding: 0  10px;
+}
+
+.exp>div>p::-webkit-scrollbar {
+  width: 2px;
+  background-color: black;
 }
